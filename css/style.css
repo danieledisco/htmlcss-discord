@@ -1,0 +1,399 @@
+/* reset browser */
+*
+{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+/* common */
+
+
+
+.header_container
+{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        height: 50%;
+}
+
+.small_container
+{
+        width: 55%;
+        height: 19rem;
+}
+.big_container_odd , .big_container_even
+{
+        width: 100%;
+        height: 30rem;
+}
+
+.container_tech_touch
+{
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        align-items: center;
+}
+
+.small_container , .header_container
+{
+      margin: auto;
+}
+
+
+.row_header
+{
+        width: 100%;
+        display: flex;
+        height: 50%;
+        justify-content: space-between; 
+        /*   margin-left: -1rem;
+        margin-right: -1rem; */
+}
+
+.row
+{
+  
+        display: flex;
+        height: 30rem;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+}
+
+
+
+a
+{
+        text-decoration: none;
+}
+
+.link
+{
+        text-align: center;
+}
+
+body
+{
+        min-width: 1000px;
+}
+
+/* utility */
+
+.col-1
+{
+        width: calc((100%/12)*1);
+}
+.col-2
+{
+        width: calc((100%/12)*2);
+}
+
+.col-3
+{
+        width: calc((100%/12)*3);
+}
+
+.col-6
+{
+        width: calc((100%/12)*6);
+}
+
+.col-4
+{
+        width: calc((100%/12)*4);
+}
+
+.col-8
+{
+        width: calc((100%/12)*8);
+}
+
+[class^="col-"]
+{
+        padding-left: 1rem;
+        padding-right: 1rem;
+}
+
+
+
+
+/* header */
+#site_header
+{
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        background-color: rgb(0, 81, 255);
+}
+
+.logo
+{
+        align-self: center;
+        color: white;
+}
+.main_menu
+{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.main_menu > .link
+{
+        padding-left: 1rem;
+        padding-right: 1rem;
+       
+}
+
+.main_menu > .link > a
+{
+        color: white;
+}
+
+.div_enter
+{
+        display: flex;
+        justify-content: end;
+}
+
+.enter
+{
+        display: flex;
+        align-self: center;
+        background-color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 13px;
+        font-size: 0.95rem;
+
+}
+
+.div_enter > .enter > a
+{
+        color: black;
+}
+
+.half_circle_left
+{
+        background-color: white;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        align-self: center;
+        margin-right: -14px;
+}
+
+.half_circle_right
+{
+        background-color: white;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        align-self: center;
+        margin-left: -14px;
+}
+
+/* main */
+.welcome
+{
+        display: flex;
+        align-items: center;
+        height: 24rem;;
+}
+
+.box_big, .box_small
+{
+        height: 26rem;
+}
+
+.technology
+{
+        height: 90%;
+        width: 80%;
+        margin: auto;
+}
+
+/* footer */
+.container_footer_top
+{
+        width: 100%;
+        height: 35rem;
+        display: flex;
+        border-bottom: 1px solid white;
+        /*align-items: center;*/
+}
+.row_footer_top
+{
+        width: 80%;
+        margin: auto;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.container_footer_down
+{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+}
+.row_footer_down
+{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        height: 75%;
+        justify-content: space-between;
+}
+
+
+
+.comp_adv
+{
+       
+        width: 5rem;
+        align-self: center;
+}
+.sign_in
+{
+       
+        width: 5rem;
+        align-self: center;
+}
+
+
+/* debug */
+.debug #site_header
+{
+        background-color: red;
+}
+
+.debug .header_container
+{
+        background-color: yellow;
+       /* border: 2px solid purple; */
+}
+
+.debug .row_header
+{
+        background-color: rgba(0, 0, 255, 0.093);
+        /*border: 1px solid black;*/
+}
+
+
+
+.debug .main_menu
+{
+        /*border: 1px solid black;*/
+}
+
+.debug .main_menu .link
+{
+        /* border: 1px solid black; */        
+}
+
+.debug .div_enter
+{
+       /*  border: 1px solid red;  */
+}
+.debug .div_enter .enter
+{
+       /*  border: 1px solid black; */          
+}
+
+.debug .welcome
+{
+        background-color: blue;
+}
+
+.debug .welcome .small_container
+{
+        background-color: palevioletred;
+}
+        
+.debug .big_container_odd
+{
+        background-color: aqua;
+       /*  border: 1px solid red; */
+}
+
+.debug .row
+{
+        background-color: yellow;
+}
+
+.debug .box_big
+{
+        background-color: orange;
+}
+
+.debug .box_small
+{
+        background-color: lime;
+}
+
+.debug .container_tech_touch
+{
+        background-color: red;
+}
+.debug .technology
+{
+        background-color: gray;
+}
+
+.debug .container_footer_top, .debug .container_footer_down
+{
+        background-color: black;
+        /*border: 2px solid green;*/
+}
+.debug .row_footer_top, .debug .row_footer_down
+{
+        background-color: white;
+}
+
+.debug .social
+{
+        background-color: blue;
+        height: 100%;
+}
+.debug .product
+{
+        background-color: rgb(221, 0, 255);
+        height: 100%;
+}
+.debug .company
+{
+        background-color: rgb(0, 255, 153);
+        height: 100%;
+}
+.debug .resources
+{
+        background-color: darkgreen;
+        height: 100%;
+}
+.debug .rules
+{
+        background-color: orange;
+        height: 100%;
+}
+
+.debug .row_footer_down
+{
+        background-color: aquamarine;
+}
+
+.debug .comp_adv
+{
+        background-color: yellow;
+        height: 50%;
+}
+
+.debug .sign_in
+{
+        background-color: yellow;
+        height: 50%;
+}
