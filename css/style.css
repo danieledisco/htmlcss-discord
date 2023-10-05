@@ -4,6 +4,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
 }
 
 /* common */
@@ -261,14 +262,14 @@ body
 {
         display: flex;
         justify-content: space-between;
-         width: 60%;
+         width: 70%;
          margin: auto;
          padding-top: 3rem;
 }
 .row_button > .btn
 {
         font-size: 2rem;
-        padding: 10px
+        padding: 10px 30px;
 }
 .box_big, .box_small
 {
