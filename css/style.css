@@ -40,6 +40,15 @@ img
         width: 100%;
 }
 
+.row
+{
+        width: 100%;
+        display: flex;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+}
+
+
 /* #endregion Common */
 
 
@@ -64,8 +73,35 @@ img
         padding: 0.5rem;
         border-radius: 1rem;
 }
+.p-l-7
+{
+        padding-left: 7rem;
+}
+.bg-black
+{
+        background-color: var(--discord-black);
+}
 
+.color-wave
+{
+        color: var(--discord-wave);
+}
+.bg-wave
+{
+        background-color: var(--discord-wave);
+}
 
+.div-wave
+{
+        color: var(--discord-wave);
+        margin-bottom: -0.2rem;
+}
+.div-wave-bottom
+{
+        color: var(--discord-wave);
+        transform: rotate(180deg);
+        margin-top: -0.25rem;
+}
 
 .d-flex
 {
@@ -85,6 +121,31 @@ img
 {
         align-items: center;
 }
+
+.col-5
+{
+        width: calc((100% / 12) * 5);
+        padding: 0 0.5rem;
+        border: 1px solid red;
+}
+
+.col-7
+{
+        width: calc((100% / 12) * 7);
+        padding: 0 0.5rem
+        border: 1px solid red;
+}
+
+.col-7 img
+{
+        padding-top: 4rem;
+}
+
+.col-5 .col-title
+{
+        padding-top: 6rem;
+}
+
 
 /* #endregion Utility */
 
@@ -139,13 +200,18 @@ header
 
 .row-btn-lg
 {
-        width: 50%;
+        width: 34%;
         position: absolute;
-        left: 50%;
-        top: 60%;
-        border:1px solid red;
+        left: 33%;
+        top: 54%;
 }
 
+.btn-lg
+{
+        font-size: 1.6rem;
+        padding: 1.2rem;
+        border-radius: 2.4rem;
+}
 
 
 
@@ -156,7 +222,16 @@ header
 
 
 /* #region Main */
-
+.col-title
+{
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding-bottom: 2rem;
+}
+.col-paragraph
+{
+        font-size: 1.3rem;
+}
 /* #endregion Main */
 
 
