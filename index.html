@@ -1,145 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>htmlcss-struttura-discord</title>
+        <title>htmlcss-discord</title>
         <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="">
 
+        <!-- #region Header -->
+        <header>
+                <div class="container align-items-center justify-content-space-between">
+                        <div class="logo">
+                                <img src="./img/logo.svg" alt="logo">
 
-
-        <header id="site_header">
-                <div class="container">
-                        <div class="row_header">
-                                <div class="logo">
-                                        <img src="./img/logo.svg" alt="logo">
-                                </div>
-                                <nav class="main_menu col-8">
-                                        <div class="link col-2">
-                                                <a href="#">Scarica</a>
-                                        </div>
-                                        <div class="link col-2">
-                                                <a href="#">Perché Discord</a>
-                                        </div>
-                                        <div class="link col-2">
-                                                <a href="#">Nitro</a>
-                                        </div>
-                                        <div class="link col-2">
-                                                <a href="#">Sicurezza</a>
-                                        </div>
-                                        <div class="link col-2">
-                                                <a href="#">Assistenza</a>
-                                        </div>
-
-                                </nav>
-                                <div class="div_enter">
-                                        <div class="enter">
-                                                <button class="btn">Accedi</button>
-                                        </div>
-
-                                </div>
                         </div>
+                        <div class="nav d-flex">
+                                <div class="nav-1">
+                                        <a href="#">Scarica</a>
+                                </div>
 
+                                <div class="nav-2">
+                                        <a href="#">Perché Discord</a>
+                                </div>
+
+                                <div class="nav-3">
+                                        <a href="#">Nitro</a>
+                                </div>
+
+                                <div class="nav-4">
+                                        <a href="#">Sicurezza</a>
+                                </div>
+
+                                <div class="nav-5">
+                                        <a href="#">Assistenza</a>
+                                </div>
+
+                        </div>
+                        <div class="login">
+                                <button class="btn">Accedi</button>
+                        </div>
                 </div>
+
         </header>
-        <!-- /#site_header -->
+        <!-- #endregion Header -->
 
-
-        <main id="site_main">
-                <session class="container_big">
-                        <img class="jumbo" src="./img/jumbo.png" alt="">
-                        <div class="text_container">
-                                <h1>Il posto per parlare</h1>
-                                <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
-                                <div class="row_button">
-                                        <button class="btn">&darr; Scarica per Mac</button>
-                                        <button class="btn bg_black fg_white">Apri Discord nel tuo Browser</button>
-                                </div> 
-                        </div>
-
-                
-
-                </session>
-
-                <section classe="invite">
-                        <div class="big_container_odd">
-                                <div class="row">
-                                        <div class="box_big col-8"></div>
-                                        <div class="box_small col-4"></div>
-                                </div>
-                        </div>
-
-                </section>
-                <section classe="easy">
-                        <div class="big_container_even">
-                                <div class="row">
-                                        <div class="box_small col-4"></div>
-                                        <div class="box_big col-8"></div>
-                                </div>
-                        </div>
-
-                </section>
-                <section classe="fandom">
-                        <div class="big_container_odd">
-                                <div class="row">
-                                        <div class="box_big col-8"></div>
-                                        <div class="box_small col-4"></div>
-                                </div>
-                        </div>
-
-                </section>
-                <section class="tech_touch">
-                        <div class="container_tech_touch">
-                                <div class="technology">
-
-                                </div>
-                        </div>
-                </section>
-        </main>
-        <!-- /#site_main -->
-        <footer id="site_footer">
-                <div class="container">
-                        <div class="footer_top">
-                                <div class="container_footer_top">
-                                        <div class="row_footer_top">
-                                                <div class="social col-4">
-                                                </div>
-                                                <div class="product col-2">
-                                                </div>
-                                                <div class="company col-2">
-                                                </div>
-                                                <div class="resources col-2">
-                                                </div>
-                                                <div class="rules col-2">
-                                                </div>
-                                        </div>
-
-                                </div>
-
-                        </div>
-
-
-                        <div class="footer_down">
-                                <div class="container_footer_down">
-                                        <div class="row_footer_down">
-                                                <div class="comp_adv">
-
-                                                </div>
-                                                <div class="sign_in">
-
-                                                </div>
-                                        </div>
-                                </div>
-
-                        </div>
+        <!-- #region Jumbotron -->
+        <div class="jumbotron">
+                <img src="./img/jumbo.png" alt="jumbo">
+                <div class="jumbo-title color-text">
+                        Il tuo posto per parlare
                 </div>
+                <div class="jumpo-paragraf color-text">
+                        Che tu facci aparte di un club scolastico, gruppo di gamer, comunità artistica
+                        mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo
+                        assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.
+                </div>
+                <div class="row-btn-lg d-flex justify-content-space-between">
+                        <button>Scarica per Mac</button>
+                        <button>Apri Discrod nel tuo Browser</button>
+                </div>
+ 
 
-        </footer>
-        <!-- /#site_footer -->
+        </div>
+        <!-- #endregion Jumbotron -->
+
 
 
 
@@ -148,5 +74,4 @@
 
 
 </body>
-
 </html>

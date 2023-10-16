@@ -1,466 +1,165 @@
-/* reset browser */
+/* #region Common */
 *
 {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+}
+
+body
+{
         font-family: Arial, Helvetica, sans-serif;
 }
 
-/* common */
-
-.btn
+:root
 {
-        border-radius:40px;
-        
+        --discord-primary-color: #3161E0;
+        --discord-secondary-color: #8EA1E1;
+        --discord-footer-text: #7289DA;
+        --discord-black: #23272A;
+        --discord-white: #ffffff;
+        --discord-wave: #F6F6F6;
 }
 
 .container
 {
         width: 80%;
+        max-width: calc( 96 * 12px );
+        display: flex;
         margin: auto;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
 }
-
-.container_big
-{
-        display: flex;
-        width: 100%;
-        margin: auto;
-        justify-content: center;
-}
-
-.header_container
-{
-        display: flex;
-        width: 80%;
-        align-items: center;
-        height: 50%;
-}
-
-.small_container
-{
-        width: 55%;
-       /*  height: 19rem; */
-}
-.big_container_odd , .big_container_even
-{
-        width: 100%;
-        height: 30rem;
-}
-
-.container_tech_touch
-{
-        width: 100%;
-        height: 50rem;
-        display: flex;
-        align-items: center;
-}
-
-.small_container , .header_container
-{
-      margin: auto;
-}
-
-
-.row_header
-{
-        width: 100%;
-        display: flex;
-        justify-content: space-between; 
-        /*   margin-left: -1rem;
-        margin-right: -1rem; */
-}
-
-.row
-{
-  
-        display: flex;
-        height: 30rem;
-        width: 80%;
-        margin: auto;
-        align-items: center;
-}
-
-
 
 a
 {
+        color: var(--discord-white);
         text-decoration: none;
 }
 
-.link
+img
 {
-        text-align: center;
-}
-
-body
-{
-        min-width: 1000px;
-}
-
-/* utility */
-
-.bg_black
-{
-        background-color: black;
-}
-
-.fg_white
-{
-        color: white
-}
-
-
-
-.col-1
-{
-        width: calc((100%/12)*1);
-}
-.col-2
-{
-        width: calc((100%/12)*2);
-}
-
-.col-3
-{
-        width: calc((100%/12)*3);
-}
-
-.col-6
-{
-        width: calc((100%/12)*6);
-}
-
-.col-4
-{
-        width: calc((100%/12)*4);
-}
-
-.col-8
-{
-        width: calc((100%/12)*8);
-}
-
-[class^="col-"]
-{
-        padding-left: 1rem;
-        padding-right: 1rem;
-}
-
-
-
-
-/* header */
-#site_header
-{
-       /*  height: 3rem; */
-        display: flex;
-        align-items: center;
-        background-color: rgb(49, 97, 224);
-}
-
-.logo
-{
-        align-self: center;
-        color: white;
-        padding-top: 10px;
-}
-.main_menu
-{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        background-color: rgb(49, 97, 224);
-}
-
-.main_menu > .link
-{
-        padding-left: 1rem;
-        padding-right: 1rem;
-       
-}
-
-.main_menu > .link > a
-{
-        color: white;
-}
-
-.div_enter
-{
-        display: flex;
-        justify-content: end;
-        background-color: rgb(49, 97, 224);
-}
-
-.enter
-{
-        display: flex;
-        align-self: center;
-        
- /*        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 13px;
-        font-size: 0.95rem; */
-
-}
-.enter > .btn
-{
-        font-size: 2rem;
-        padding:5px;
-}
-
-.div_enter > .enter > a
-{
-        color: black;
-}
-
-
-/* main */
-#site_main
-{
-        /* background-color: rgb(49, 97, 224); */
-}
-.welcome
-{
-        display: flex;
-        align-items: center;
-       /*  height: 24rem;; */
-       
-}
-.jumbo
-{
-        display: flex;
         width: 100%;
-        height: 100%;
-        margin: auto;
 }
-.text_container
+
+/* #endregion Common */
+
+
+/* #region Debug */
+.debug .logo, .debug .nav, .debug .login 
+{
+        height: 80px;
+        border: 1px solid red;
+}
+
+/* #endregion Debug */
+
+
+/* #region Utility */
+.justify-content-space-between
+{
+        justify-content: space-between;
+}
+
+.btn
+{
+        padding: 0.5rem;
+        border-radius: 1rem;
+}
+
+
+
+.d-flex
+{
+        display: flex;
+}
+
+.color-text
+{
+        color: var(--discord-white);
+}
+
+[class^="nav-"]
+{
+        padding: 1.5rem;
+}
+.align-items-center
+{
+        align-items: center;
+}
+
+/* #endregion Utility */
+
+
+/* #region Header */
+header
+{
+        background-color: var(--discord-primary-color);
+}
+
+
+.login
+{
+        text-align: end;
+}
+
+.login > .btn
+{
+        font-size: 1rem;;
+}
+
+/* #endregion Header */
+
+
+/* #region Jumbotron */
+.jumbotron
+{
+        width: 100%;
+        background-size: cover;
+        position: relative;
+}
+
+.jumbo-title
 {
         position: absolute;
-        color: white;
-        top: 17rem;
-        background-color: rgb(255, 255, 255, 0);
+        top: 16%;
+        left: 33%;
+        font-size: 4rem;
+        font-weight: bold;
+}
+
+.jumpo-paragraf
+{
+        position: absolute;
+        top: 35%;
+        left: 27%;
+        width: 47%;
+        font-size: 1.5rem;
         text-align: center;
-        width: 45%;
-}
-.text_container > h1
-{
-        font-size: 7rem;
-}
-.text_container > p
-{
-        padding-top: 2rem;
-        line-height: 4rem;
-        font-size: 2rem;
-}    
-
-.row_button
-{
-        display: flex;
-        justify-content: space-between;
-         width: 70%;
-         margin: auto;
-         padding-top: 3rem;
-}
-.row_button > .btn
-{
-        font-size: 2rem;
-        padding: 10px 30px;
-}
-.box_big, .box_small
-{
-        height: 26rem;
+        line-height: 2.2rem;
 }
 
-.technology
+.row-btn-lg
 {
-        height: 90%;
-        width: 80%;
-        margin: auto;
-}
-
-/* footer */
-.container_footer_top
-{
-        width: 100%;
-        height: 35rem;
-        display: flex;
-        border-bottom: 1px solid white;
-        /*align-items: center;*/
-}
-.row_footer_top
-{
-        width: 80%;
-        margin: auto;
-        height: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-.container_footer_down
-{
-        width: 100%;
-        height: 5rem;
-        display: flex;
-        align-items: center;
-}
-.row_footer_down
-{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        height: 75%;
-        justify-content: space-between;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        border:1px solid red;
 }
 
 
 
-.comp_adv
-{
-       
-        width: 5rem;
-        align-self: center;
-}
-.sign_in
-{
-       
-        width: 5rem;
-        align-self: center;
-}
 
-
-/* debug */
-.debug #site_header
-{
-        background-color: red;
-}
-
-.debug .header_container
-{
-        background-color: yellow;
-       /* border: 2px solid purple; */
-}
-
-.debug .row_header
-{
-        background-color: rgba(0, 0, 255, 0.093);
-        /*border: 1px solid black;*/
-}
+/* #endregion Jumbotron */
 
 
 
-.debug .main_menu
-{
-        /*border: 1px solid black;*/
-}
 
-.debug .main_menu .link
-{
-        /* border: 1px solid black; */        
-}
 
-.debug .div_enter
-{
-       /*  border: 1px solid red;  */
-}
-.debug .div_enter .enter
-{
-       /*  border: 1px solid black; */          
-}
+/* #region Main */
 
-.debug .welcome
-{
-        background-color: blue;
-}
+/* #endregion Main */
 
-.debug .welcome .small_container
-{
-        background-color: palevioletred;
-}
-        
-.debug .big_container_odd
-{
-        background-color: aqua;
-       /*  border: 1px solid red; */
-}
 
-.debug .row
-{
-        background-color: yellow;
-}
+/* #region Footer */
 
-.debug .box_big
-{
-        background-color: orange;
-}
-
-.debug .box_small
-{
-        background-color: lime;
-}
-
-.debug .container_tech_touch
-{
-        background-color: red;
-}
-.debug .technology
-{
-        background-color: gray;
-}
-
-.debug .container_footer_top, .debug .container_footer_down
-{
-        background-color: black;
-        /*border: 2px solid green;*/
-}
-.debug .row_footer_top, .debug .row_footer_down
-{
-        background-color: white;
-}
-
-.debug .social
-{
-        background-color: blue;
-        height: 100%;
-}
-.debug .product
-{
-        background-color: rgb(221, 0, 255);
-        height: 100%;
-}
-.debug .company
-{
-        background-color: rgb(0, 255, 153);
-        height: 100%;
-}
-.debug .resources
-{
-        background-color: darkgreen;
-        height: 100%;
-}
-.debug .rules
-{
-        background-color: orange;
-        height: 100%;
-}
-
-.debug .row_footer_down
-{
-        background-color: aquamarine;
-}
-
-.debug .comp_adv
-{
-        background-color: yellow;
-        height: 50%;
-}
-
-.debug .sign_in
-{
-        background-color: yellow;
-        height: 50%;
-}
+/* #endregion Footer */
